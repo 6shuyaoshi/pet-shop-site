@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paw & Purr 宠物店</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Paw & Purr 首页">
+      <span class="brand-mark">P</span>
+      <span>
+        <strong>Paw & Purr</strong>
+        <small>宠物生活馆</small>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#services">服务</a>
+      <a href="#shop">精选商品</a>
+      <a href="#appointment">预约</a>
+      <a href="#visit">到店</a>
+    </nav>
+    <button class="cart-button" type="button" data-open-cart aria-label="查看购物清单">
+      <span aria-hidden="true">🛒</span>
+      <span class="cart-count" data-cart-count>0</span>
+    </button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">今日可预约洗护 · 营养师在店</p>
+        <h1>Paw & Purr 宠物生活馆</h1>
+        <p class="hero-text">为猫咪和狗狗准备鲜食、洗护、寄养与日常用品。透明价格、独立护理记录，适合忙碌但想认真照顾小伙伴的主人。</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#appointment">预约到店</a>
+          <a class="secondary-link" href="#shop">挑选用品</a>
+        </div>
+        <div class="quick-stats" aria-label="门店亮点">
+          <span><strong>4.9</strong>用户评分</span>
+          <span><strong>30min</strong>快速洗护</span>
+          <span><strong>24h</strong>寄养看护</span>
+        </div>
+      </div>
+      <img src="assets/hero-pets.png" alt="宠物店里猫咪和狗狗的插画" class="hero-image">
+    </section>
+
+    <section class="toolbar" aria-label="今日门店状态">
+      <div>
+        <strong>今天营业</strong>
+        <span>09:30 - 21:00</span>
+      </div>
+      <div>
+        <strong>当前排队</strong>
+        <span>洗护约 2 组</span>
+      </div>
+      <div>
+        <strong>新人礼</strong>
+        <span>首单护理 8 折</span>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-heading">
+        <p class="eyebrow">Care Menu</p>
+        <h2>服务项目</h2>
+        <div class="filter-group" role="group" aria-label="筛选服务">
+          <button type="button" class="filter active" data-filter="all">全部</button>
+          <button type="button" class="filter" data-filter="dog">狗狗</button>
+          <button type="button" class="filter" data-filter="cat">猫咪</button>
+        </div>
+      </div>
+      <div class="service-grid">
+        <article class="service-card" data-pet="dog cat">
+          <img src="assets/service-grooming.png" alt="宠物洗护服务插画">
+          <div>
+            <span class="tag">热卖</span>
+            <h3>基础洗护</h3>
+            <p>含清洁、吹干、耳眼护理、爪垫检查，护理师会记录皮毛状态。</p>
+            <strong>¥88 起</strong>
+          </div>
+        </article>
+        <article class="service-card" data-pet="dog">
+          <img src="assets/service-boarding.png" alt="宠物寄养小屋插画">
+          <div>
+            <span class="tag">24h</span>
+            <h3>安心寄养</h3>
+            <p>独立房间、定时喂食、晚间巡查，每天发送照片和状态更新。</p>
+            <strong>¥128 / 晚</strong>
+          </div>
+        </article>
+        <article class="service-card" data-pet="cat">
+          <img src="assets/cat-care.png" alt="猫咪护理插画">
+          <div>
+            <span class="tag">安静房</span>
+            <h3>猫咪专项护理</h3>
+            <p>低刺激洗护、去浮毛、指甲修剪，适合胆小或不爱出门的猫咪。</p>
+            <strong>¥108 起</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shop-section" id="shop">
+      <div class="section-heading">
+        <p class="eyebrow">Pet Picks</p>
+        <h2>精选商品</h2>
+        <p>常用消耗品和门店护理师推荐款，可先加入清单，到店直接领取。</p>
+      </div>
+      <div class="product-layout">
+        <img src="assets/shop-products.png" alt="宠物食品和玩具插画" class="product-feature">
+        <div class="product-grid">
+          <article class="product-card">
+            <span class="product-icon">🥣</span>
+            <h3>低敏鲜食包</h3>
+            <p>鸡肉南瓜配方，适合肠胃敏感宠物。</p>
+            <div class="product-bottom">
+              <strong>¥39</strong>
+              <button type="button" data-add-cart="低敏鲜食包" data-price="39">加入</button>
+            </div>
+          </article>
+          <article class="product-card">
+            <span class="product-icon">🧴</span>
+            <h3>温和洗护露</h3>
+            <p>燕麦舒缓配方，洗后不厚重。</p>
+            <div class="product-bottom">
+              <strong>¥68</strong>
+              <button type="button" data-add-cart="温和洗护露" data-price="68">加入</button>
+            </div>
+          </article>
+          <article class="product-card">
+            <span class="product-icon">🎾</span>
+            <h3>耐咬训练球</h3>
+            <p>弹性适中，适合室内消耗精力。</p>
+            <div class="product-bottom">
+              <strong>¥29</strong>
+              <button type="button" data-add-cart="耐咬训练球" data-price="29">加入</button>
+            </div>
+          </article>
+          <article class="product-card">
+            <span class="product-icon">🧶</span>
+            <h3>猫咪逗趣套装</h3>
+            <p>替换羽毛、铃铛和抓板组合。</p>
+            <div class="product-bottom">
+              <strong>¥56</strong>
+              <button type="button" data-add-cart="猫咪逗趣套装" data-price="56">加入</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section appointment-section" id="appointment">
+      <div class="appointment-copy">
+        <p class="eyebrow">Booking</p>
+        <h2>预约护理时段</h2>
+        <p>填写宠物类型和服务，页面会生成一张预约确认卡。真实下单前，店员会再电话确认宠物体重、性格和特殊护理需求。</p>
+      </div>
+      <form class="booking-form" data-booking-form>
+        <label>
+          主人姓名
+          <input name="owner" type="text" placeholder="例如：陈小姐" required>
+        </label>
+        <label>
+          宠物类型
+          <select name="pet" required>
+            <option value="">请选择</option>
+            <option>狗狗</option>
+            <option>猫咪</option>
+            <option>其他小宠</option>
+          </select>
+        </label>
+        <label>
+          服务项目
+          <select name="service" required>
+            <option value="">请选择</option>
+            <option>基础洗护</option>
+            <option>安心寄养</option>
+            <option>猫咪专项护理</option>
+            <option>营养咨询</option>
+          </select>
+        </label>
+        <label>
+          到店日期
+          <input name="date" type="date" required>
+        </label>
+        <button type="submit">生成预约卡</button>
+        <output class="booking-output" data-booking-output aria-live="polite"></output>
+      </form>
+    </section>
+
+    <section class="section visit-section" id="visit">
+      <div>
+        <p class="eyebrow">Visit Us</p>
+        <h2>来店里看看</h2>
+        <p>地址：城市中心花园路 18 号。门口可短暂停车，猫咪护理间与狗狗洗护区分开，减少等待时的紧张感。</p>
+      </div>
+      <div class="visit-panel">
+        <strong>服务热线</strong>
+        <a href="tel:400-882-6620">400-882-6620</a>
+        <span>微信同号 · 可发送宠物近照提前评估</span>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-panel" data-cart-panel aria-label="购物清单" aria-hidden="true">
+    <div class="cart-header">
+      <h2>购物清单</h2>
+      <button type="button" data-close-cart aria-label="关闭购物清单">×</button>
+    </div>
+    <ul data-cart-items></ul>
+    <div class="cart-total">
+      <span>合计</span>
+      <strong data-cart-total>¥0</strong>
+    </div>
+  </aside>
+  <div class="cart-backdrop" data-close-cart></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
